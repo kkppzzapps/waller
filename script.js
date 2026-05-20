@@ -1,6 +1,5 @@
 console.log('Base code loaded')
-
-// Simple logic to interact with a corresponding HTML file
+let paragraph = document.getElementById('outputt'); // Simple logic to interact with a corresponding HTML file
 document.addEventListener('DOMContentLoaded', function () {
 	const app = document.getElementById('app')
 	if (app) {
@@ -25,9 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
 				alert('Please enter something')
 			} else {
 				console.log('User input:', inputValue)
-				alert('You entered: ' + inputValue)
+				paragraph.textContent = 'You entered: ' + inputValue;
 				userInput.value = ''
 			}
 		})
 	}
 })
+function clearOutput() {
+	paragraph.textContent = '';
+}
