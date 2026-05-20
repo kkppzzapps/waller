@@ -8,4 +8,14 @@ body { font-family: Arial, sans-serif; margin: 42px; }
 
 .button {
 	background-color: red;
+	color: yellow;
 }		
+#clearbtn {
+	padding: 10px 20px; 
+	font-size: 16px; 
+	background-color: red; 
+	color: yellow; 
+	border: none; 
+	border-radius: 4px; 
+	cursor: pointer;
+}
